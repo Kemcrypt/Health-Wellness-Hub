@@ -162,3 +162,16 @@ section {
           color:#3c3434;
           text-align: center;
       }
+
+      .practices-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .practices-section img {
+        max-width: 250px;
+        max-height: 300px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }

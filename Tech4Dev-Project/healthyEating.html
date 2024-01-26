@@ -1,208 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Communicable & nono-communicable diseases</title>
-    <style>
-        body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: pink;
-      box-sizing: border-box;
-    }
-
-    header {
-      background-color: #f713c5;
-      color: #fff;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    header img {
-      max-width: 60px; /* Adjust the max-width as needed */
-      height: 60px;
-      margin-right: 10px; /* Add some spacing between the logo and text */
-      border-radius: 30px;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    nav {
-      background-color: #444;
-      padding: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      display: inline-block;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav li {
-      position: relative;
-    }
-
-    nav ul ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #555;
-      min-width: 100%; /* Adjust the width as needed */
-    }
-
-    nav ul li:hover > ul {
-      display: flex;
-      flex-direction: column;
-    }
-
-        /* Navbar container */
-    .navbar {
-    overflow: hidden;
-    background-color: #f713c5;
-    font-family: Arial;
-    }
-
-    /* Links inside the navbar */
-    .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-    /* The dropdown container */
-    .dropdown {
-    float: left;
-    overflow: hidden;
-    }
-
-    /* Dropdown button */
-    .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    }
-
-    /* Add a red background color to navbar links on hover */
-    .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
-    }
-
-    /* Dropdown content (hidden by default) */
-    .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:  #f713c5;
-    min-width: 160px;
-    
-    z-index: 1;
-    }
-
-    /* Links inside the dropdown */
-    .dropdown-content a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    }
-
-    /* Add a grey background color to dropdown links on hover */
-    .dropdown-content a:hover {
-    background-color: magenta;
-    min-width: 160px;
-    }
-
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-
-    footer {
-        background-color:  #f713c5;
-        color: #fff;
-        text-align: center;
-        padding: 4px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        line-height: 0.8; /* Adjust as needed */
-        }
-
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-          <img src="./img/colourRib.jpg" alt="Logo">
-          <h1>Rise</h1>
-        </div>
-    
-        <div class="navbar">
-          <a href="index.html">Home</a>
-          <a href="aboutUs.html">About Us</a>
-          <div class="dropdown">
-            <button class="dropbtn">Health is Wealth
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="fitness.html">Fitness</a>
-              <a href="healthyEating.html">Healthy Eating</a>
-              <a href="mentalHealth.html">Mental Health</a>
-              <a href="diseases.html">Diseases</a>
-              <a href="drugUsePreventation.html">Drug-Use Prevention</a>
-              <a href="sexEducation.html">Sex Education</a>
-            </div>
+      <div class="logo">
+        <img src="./img/colourRib.jpg" alt="Logo" />
+        <h1>Rise</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Health is Wealth
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fitness.html">Fitness</a>
+            <a href="healthyEating.html">Healthy Eating</a>
+            <a href="mentalHealth.html">Mental Health</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="drugUsePreventation.html">Drug-Use Prevention</a>
+            <a href="sexEducation.html">Sex Education</a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Community Support
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="donations.html">Donations</a>
-              <a href="eventsWebinars.html">Events&Webinars</a>
-              <a href="communityServices.html">Community Services</a>
-            </div>
-          </div>
-          <a href="selfDefense.html">Self-Defense</a>
         </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Community Support
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="donations.html">Donations</a>
+            <a href="eventsWebinars.html">Events&Webinars</a>
+            <a href="communityServices.html">Community Services</a>
+          </div>
+        </div>
+        <a href="selfDefense.html">Self-Defense</a>
+      </div>
     </header>
 
-
-
-
     <footer>
-    <p>&copy; 2024 Rise. All rights reserved.</p>
+      <p>&copy; 2024 Rise. All rights reserved.</p>
     </footer>
-
-    
-</body>
+  </body>
 </html>

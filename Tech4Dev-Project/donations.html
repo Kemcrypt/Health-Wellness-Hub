@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donations</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
-    <style></style>
+    <style>
+      section {
+        margin-bottom: 20px;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .donate {
+        background-color: #f713c5;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .donate:hover {
+        background-color: #f713c5;
+        transform: scale(1.1);
+      }
+      .support {
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -45,6 +83,59 @@
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
+    <div class="support">
+      <h1>Support Our Cause</h1>
+      <p>Your contribution makes a difference!</p>
+    </div>
+
+    <section>
+      <h2>Make a Donation</h2>
+      <!-- Form to make donation -->
+      <form action="your_payment_processor_link_here" method="post">
+        <label for="amount">Amount:</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          placeholder="Enter amount"
+          required
+        />
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency" required>
+          <option value="usd">USD</option>
+          <option value="Naira">Naira</option>
+        </select>
+
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Full Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <button class="donate" type="submit">Donate Now</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Other Ways to Contribute</h2>
+      <p>
+        If you prefer other methods of contribution, please contact us at
+        <a href="mailto:donations@rise.com">donations@rise.com</a>
+      </p>
+    </section>
 
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>

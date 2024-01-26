@@ -191,11 +191,11 @@ h3 {
 .defence{
   display: flex;
   flex-wrap: nowrap;
-
-
+  
 }
 
 .defenceBox{
+ 
   background-color:rgb(255, 201, 210);
   border: 3px solid #f713c5;
   width: 33%;
@@ -213,13 +213,41 @@ h3 {
 .button:hover{
   background-color: #e000b0;
   cursor: pointer;
+  font-size: 20px;
 }
+
 .button{
   color:  rgb(236, 184, 193);
-  border-radius: 13px;
+  border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #f713c5;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.align{
+  text-align: center;
+}
+
+.readme{
+  margin: 40px;
+  background-color: rgb(235, 169, 180);
+  padding: 20px;
+  border-radius: 5px;
+}
+.questions{
+  margin: 10px;
+  background-color: rgb(235, 169, 180);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+summary{
+  /* border: 1px solid #f713c5; */
+  display: inline;
+  background-color:rgb(211, 132, 145);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
 }

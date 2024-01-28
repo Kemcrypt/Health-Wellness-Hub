@@ -139,6 +139,160 @@ body {
   display: block;
   }
 
+
+  /*  Syle for Fitness */
+  .menu{
+    display: none;
+  }
+  body{
+    font-family: roboto;
+  }
+  .fit-body{
+    width: 100%;
+    height: 60%;
+  }
+ img{
+  max-width: 100%;
+  object-fit: contain;
+ }
+ .simple{
+  padding-top: 1em;
+  background-color: white;
+ }
+ .fitness{
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:white ;
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+ }
+ .fitness > *{
+  flex: 1 1 50%;
+  box-sizing: border-box;
+ }
+ .fit{
+  width: 50%;
+  padding-top: em;
+  height: 75vh;
+  /* text-align: center; */
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  background-color: aliceblue;
+  /* margin-left: 13em;
+  margin-right: 15em; */
+  margin-bottom: 2em;
+ }
+ .new{
+  height:20em;
+  object-fit: cover;
+  width: 30em;
+ }
+ .ways{
+  text-align: left;
+  padding-left: 2em;
+ }
+ .text{
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 25em;
+ }
+.diff{
+  background-color: #232323;
+  color: white;
+}
+@media(max-width: 30rem){
+  header{
+    display: block;
+  }
+  .log{
+    display: flex;
+    height: auto ;
+    justify-content: space-between;
+    gap: 6em;
+  }
+  .menu{
+    display: block;
+    object-fit: contain;
+
+  }
+  .navbar{
+    height: 0;
+    overflow: hidden;
+    display: block;
+    font-family: roboto;
+  }
+  .navbar :hover{
+   cursor: pointer;
+  }
+  .show{
+    height: 10em;
+    transition: 0.3ms;
+  }
+  .simple{
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  .fitness{
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+    background-color: white;
+  }
+  .fit{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .text{
+    padding-bottom: 0.7em;
+  }
+
+}
+@media(min-width: 30rem){
+  .simple{
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+}
+@media(min-width: 60rem){
+  .simple{
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+  .fitness{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white ;
+    /* text-align: center; */
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    /* padding: 0; */
+   }
+   .fitness > *{
+    flex: 1 1 50%;
+    box-sizing: border-box;
+   }
+  .fit{
+    margin-bottom: 0;
+    background-color: white;
+  }
+  .ways{
+    padding-left: 6em;
+  }
+  .text{
+    padding-left: 6em;
+    padding-bottom: 1em;
+  }
+  .foot{
+    position: relative;
+  }
+ 
+}
+ 
   footer {
       background-color:  #f713c5;
       color: #fff;

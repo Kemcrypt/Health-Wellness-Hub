@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+      }
+      .event-card {
+        margin-bottom: 20px;
+      }
+      .btn-register {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+      }
+      .btn-register:hover {
+        background-color: #218838;
+      }
+      
+      .jumbotron {
+          background-image: url('img/webiner.jpg'); /* Replace with your image */
+          background-size: cover;
+          color: #fff;
+          text-align: center;
+          padding: 100px 0;
+          margin-bottom: 0;
+          opacity: 0.5;
+      }
+
+
+      .card-container {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card-container.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+    </style>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
     <style></style>
@@ -47,6 +88,139 @@
       </div>
     </header>
 
+
+    
+    <div class="jumbotron">
+      <h1 class="display-4" style="color: black;">Healthy and Wellness Hub Events & Webinars</h1>
+      <!-- <p class="lead" style="color: black;">Fuel your body with nutritious food for a healthier lifestyle.</p> -->
+  </div>  
+
+      <div class="container mt-5">
+          <!-- Image Section -->
+
+      
+        <!-- Upcoming Events -->
+        <h2>Upcoming Events</h2>
+        <div class="row">
+          <div class="col-md-4 card-container">
+            <div class="card event-card">
+              <img src="img/meditation.jpg" class="card-img-top" alt="Healthy Food 1">
+              <div class="card-body">
+
+  
+                <h5 class="card-title">Mindful Meditation Workshop</h5>
+                <p class="card-text">Date: 06-02-24<br>Time: 12Pm WAT</p>
+                <p class="card-text">Immerse yourself in the world of mindfulness during our workshop. Learn meditation techniques to reduce stress, enhance focus, and cultivate a peaceful state of mind. Suitable for all levels.</p>
+                <p style="color: black;"><a href="#contact">Register Today</a></p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4 card-container">
+            <div class="card event-card">
+              <img src="img/healthylate.jpg" class="card-img-top" alt="Healthy Food 1" style="height: 175px;">
+              <div class="card-body">
+
+  
+                <h5 class="card-title">Nutrition 101: Building a Healthy Plate</h5>
+                <p class="card-text">Date: 23-03-24<br>Time: 2PM WAT</p>
+                <p class="card-text">Discover the secrets to a balanced diet! Our nutrition experts will share practical tips on creating a plate that nourishes your body and fuels your energy. Q&A session included.</p>
+                <p style="color: black;"><a href="#contact">Register Today</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 card-container">
+            <div class="card event-card">
+              <img src="img/yoga.jpg" class="card-img-top" alt="Healthy Food 1" style="height: 185px;">
+              <div class="card-body">
+
+  
+                <h5 class="card-title">Yoga for Beginners</h5>
+                <p class="card-text">Date: 01-04-24<br>Time: 2pm WAT</p>
+                <p class="card-text"> Start your yoga journey with our experienced instructor. Learn basic poses, breathing exercises, and meditation techniques. Bring a yoga mat and an open mind. All fitness levels welcome.</p>
+                <p style="color: black;"><a href="#contact">Register Today</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more event cards as needed -->
+      
+        </div>
+      
+        <!-- Featured Webinars -->
+       <b> <h2 class="mt-4" style="align-items: center;">Featured Webinars</h2></b>
+        <div class="row">
+          <div class="col-md-4 card-container">
+            <div class="card event-card">
+              <img src="img/sleep.jpg" class="card-img-top" alt="Healthy Food 1">
+              <div class="card-body">
+                <h5 class="card-title"> Sleep Hygiene: A Key to Wellness</h5>
+                <p class="card-text">Date: 01-04-24<br>Time: 2pm WAT</p>
+                <p class="card-text">Discover the importance of quality sleep and learn effective techniques to improve your sleep hygiene. Join our sleep experts for insights into creating a restful and rejuvenating sleep routine.</p>
+                <p style="color: black;"><a href="#contact">Register Today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-container">
+            <div class="card event-card">
+              <img src="img/stress.jpg" class="card-img-top" alt="Healthy Food 1" style="height: 210px;">
+              <div class="card-body">
+                <h5 class="card-title">Stress Management in the Digital Age</h5>
+                <p class="card-text">Date: 01-04-24<br>Time: 2pm WAT</p>
+                <p class="card-text">Explore the impact of digital technology on stress levels. Our experts will provide practical strategies to maintain mental well-being in today's fast-paced world. Don't miss this insightful webinar.</p>
+                <p style="color: black;"><a href="#contact">Register Today</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more webinar cards as needed -->
+      
+        </div>
+      </div>
+
+      <section id="contact">
+        <div class="container mt-4 card-container">
+            <h2 class="text-center mb-4">Register</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        </section>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+             const cards = document.querySelectorAll('.card-container');
+       
+             const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                   if (entry.isIntersecting) {
+                      entry.target.classList.add('visible');
+                      observer.unobserve(entry.target);
+                   }
+                });
+             }, { threshold: 0.5 });
+       
+             cards.forEach(card => {
+                observer.observe(card);
+             });
+          });
+       </script>
+      
+      <!-- JavaScript and Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>
     </footer>

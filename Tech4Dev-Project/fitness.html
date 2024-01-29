@@ -4,6 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fitness</title>
+           <!-- Bootstrap CSS -->
+           <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+           <!-- Custom CSS -->
+           <style>
+               body {
+                   background-color: #fce4ec; /* Pink background */
+                   color: #fff; /* White text */
+               }
+       
+               .navbar {
+                   background-color: #e91e63; /* Dark pink navbar */
+               }
+       
+               .jumbotron {
+                   background-color: #f06292; /* Light pink jumbotron */
+                   color: #fff; /* White text */
+                   position: relative;
+               }
+       
+               .jumbotron h1 {
+                   font-family: 'Pacifico', cursive; /* Use a nice font, change it to the desired font */
+                   font-size: 2.5rem;
+               }
+       
+               .carousel-item {
+                   position: relative;
+               }
+       
+               .motivation-text {
+                   
+                   position: absolute;
+                   top: 50%;
+                   left: 35%;
+                   transform: translate(-50%, -50%);
+                   text-align: center;
+                   font-family: 'Pacifico', cursive; /* Use the same font as in the jumbotron */
+                   font-size: 2rem;
+                   background-color: rgba(236, 64, 122, 0.6); /* Transparent card background */
+                   border-radius: 15px;
+               }
+       
+               .card {
+                   background-color: #ec407a; /* Medium pink cards */
+                   color: #fff; /* White text */
+                   transition: transform 0.3s;
+               }
+       
+               .card:hover {
+                   transform: scale(1.05);
+               }
+       
+               .card img {
+                   transition: transform 0.3s;
+               }
+       
+               .card:hover img {
+                   transform: scale(1.1);
+               }
+       
+               .donation-section {
+                   background-color: #f48fb1; /* Lighter pink donation section */
+                   color: #fff; /* White text */
+               }
+   
+               .transparent-card {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               text-align: center;
+               background-color: rgba(236, 64, 122, 0.6); /* Transparent card background */
+               padding: 20px;
+               border-radius: 15px;
+               width: 70%;
+           }
+           .fitness-container {
+      margin-bottom: 30px;
+      
+    }
+    
+           </style>
+
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
     <style></style>
@@ -46,48 +129,200 @@
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 550px;">
+              <img src="img/pexels-andrea-piacquadio-3768593.jpg" class="d-block w-100" alt="Fitness Image 1">
+              
+              <div class="motivation-text">"Fitness is self-discovery; sculpt your body, mold your character. Embrace patience, gratitude, and growth. Stride forward, becoming the best version of yourself."</div>
+          </div>
+          <div class="carousel-item" style="height: 550px;">
+              <img src="img/pexels-anna-shvets-5069334.jpg" class="d-block w-100" alt="Fitness Image 2">
+              <div class="motivation-text">"Celebrate every step; your fitness journey is a triumph. Embrace discipline, relish challenges, and become the resilient, empowered you."</div>
+  
+          </div>
+  
+  
+  
+          <div class="carousel-item" style="height: 550px;">
+              <img src="img/pexels-andrea-piacquadio-864939.jpg" class="d-block w-100" alt="Fitness Image 3">
+              <div class="motivation-text">"Transform workouts into empowering rituals; honor your body's capabilities. Cherish strength, endure setbacks, and craft a resilient, empowered spirit."</div>
+  
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+  
+  <!-- Jumbotron with Fitness Message -->
+  <div class="jumbotron text-center">
+      <h1 class="display-4">Achieve Your Fitness Goals!</h1>
+      <p class="lead">Join our training sessions and transform your body and mind.</p>
 
-    <div class="fitness-container">
-      <div class="fitness-content">
-          <h2>Stay Active, Stay Healthy</h2>
-          <p>How to Stay Fit: Your Guide to Good Health</p>
+      <h1 style="color: black;"><a href="#contact">Join Us!!</a></h1>
+  </div>
+  
 
-           <p>With life moving so fast, staying in shape is super important. Being fit doesn't just make you look and feel good,
-          it also comes with loads of extras that go past just being healthy.
-          We're gonna dive into how to keep fit and all the great stuff that comes with making exercise a part of your everyday life.</p>
+  <div class="container" style="background-color: #fff; margin-top: 20px; border-radius: 10px 20px 30px 40px;">
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black; margin-top: 20px;">Fitness Tips For You</h1><p style="
+    color: pink;">Click to expand</summary><p>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="fitness-container">
+          <div class="fitness-content">
+            <details>
+           <summary> <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Stay Active, Stay Healthy</h2></summary>
+            <p style="color: black;">How to Stay Fit: Your Guide to Good Health</p>
+            <p style="color: black;">With life moving so fast, staying in shape is super important. Being fit doesn't just make you look and feel good,
+              it also comes with loads of extras that go past just being healthy. We're gonna dive into how to keep fit and all
+              the great stuff that comes with making exercise a part of your everyday life.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-12">
+        <div class="fitness-container">
+          <div class="fitness-content">
+            <details>
+            <summary><h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Regular Exercise: The Foundation of Fitness</h2></summary>
+            <p style="color: black;">One of the most effective ways to stay fit is through regular exercise. Whether it's cardiovascular workouts,
+              strength training, or flexibility exercises, a well-rounded fitness routine can help you achieve and maintain optimal
+              health. Aim for at least 150 minutes of moderate-intensity exercise or 75 minutes of vigorous exercise per week,
+              combined with strength training exercises at least twice a week.</p>
+              </details>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="col-lg-12">
+        <div class="fitness-container">
+          <div class="fitness-content">
+            <details>
+            <summary><h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Balanced Nutrition: Eating Right</h2></summary>
+            <p style="color: black;">Physical fitness is a holistic concept that includes not just exercise but also proper nutrition. Fueling your body
+              with a balanced diet rich in fruits, vegetables, lean proteins, and whole grains is essential. Adequate hydration is
+              equally important for supporting your workouts and maintaining overall health.</p>
+              </details>
+          </div>
+        </div>
       </div>
 
-      <div class="fitness-container">
+      <div class="col-lg-12">
+        <div class="fitness-container">
           <div class="fitness-content">
-              <h2>Regular Exercise: The Foundation of Fitness</h2>
-  
-               <p>One of the most effective ways to stay fit is through regular exercise. Whether it's cardiovascular workouts, 
-                  strength training, or flexibility exercises, a well-rounded fitness routine can help you achieve and maintain optimal health. 
-                  Aim for at least 150 minutes of moderate-intensity exercise or 75 minutes of vigorous exercise per week, 
-                  combined with strength training exercises at least twice a week.</p>
+            <details>
+            <summary><h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Adequate Rest and Recovery: The Unsung Heroes</h2></summary>
+            <p style="color: black;">Contrary to popular belief, rest is an integral part of any fitness regimen. Muscles need time to recover and
+              grow stronger after workouts. Ensure you get enough sleep and allow your body to recharge. Lack of sleep can hinder
+              your fitness progress and lead to various health issues.</p>
+              </details>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <div class="fitness-container">
-      <div class="fitness-content">
-          <h2>Balanced Nutrition: Eating Right</h2>
 
-           <p>Physical fitness is a holistic concept that includes not just exercise but also proper nutrition. 
-              Fueling your body with a balanced diet rich in fruits, vegetables, lean proteins,
-              and whole grains is essential. Adequate hydration is equally important for  
-              supporting your workouts and maintaining overall health.</p>
-</div>
 
-<div class="fitness-container">
-  <div class="fitness-content">
+  <!-- Training Sessions -->
+  <div class="container mt-4">
+      <h2 class="text-center mb-4">Upcoming Training Sessions</h2>
+      <div class="row">
+          <!-- Training Session Card 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="img/cardio-blast.jpg" class="card-img-top" alt="Training Session 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Cardio Blast</h5>
+                      <p class="card-text">Get your heart pumping with our high-intensity cardio workout.</p>
+                      <p class="card-text">Date: January 30, 2024</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Training Session Card 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="img/strength-training.jpg" class="card-img-top" alt="Training Session 2" >
+                  <div class="card-body">
+                      <h5 class="card-title">Strength Training</h5>
+                      <p class="card-text">Build muscle and increase strength with our expert-led training.</p>
+                      <p class="card-text">Date: February 5, 2024</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Training Session Card 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="img/yoga.jpg" class="card-img-top" alt="Training Session 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Yoga Retreat</h5>
+                      <p class="card-text">Relax and rejuvenate your body and mind with our yoga retreat.</p>
+                      <p class="card-text">Date: February 12, 2024</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  
+  
+  <!-- Contact Form -->
+  <section id="contact">
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Join Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </section>
+    <!-- Donation Section -->
+    <div class="donation-section text-center p-4">
+        <h2 class="mb-4">Support Our Healthy Hub</h2>
+        <p>Your contribution helps us continue growing a healty community.</p>
+        <button class="btn btn-light btn-lg mt-3">Donate Now</button>
+    </div>
     
-          <h2>Adequate Rest and Recovery: The Unsung Heroes</h2>
-
-       <p>Contrary to popular belief, rest is an integral part of any fitness regimen. 
-        Muscles need time to recover and grow stronger after workouts. 
-        Ensure you get enough sleep and allow your body to recharge.
-         Lack of sleep can hinder your fitness progress and lead to various health issues.</p>
-</div>
-
+    <!-- JavaScript and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- AOS Library for Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS library for fade-up animation
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>
     </footer>

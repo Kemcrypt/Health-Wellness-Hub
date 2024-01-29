@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tech4Dev-Project</title>
+    <style>
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1350px;
+        position: relative;
+        margin: auto;
+        height: 315px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+        height: 315px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mask-repeat: no-repeat;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(187, 173, 173, 0.8);
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 14px;
+        width: 14px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .contact,
+      a,
+      img {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .affirms {
+        text-align: center;
+      }
+      #firm {
+        color: #581249;
+        font-size: 38px;
+        font-family: cursive;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/colourRib.jpg" alt="Logo" />
+        <h1>Rise</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Health is Wealth
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fitness.html">Fitness</a>
+            <a href="healthyEating.html">Healthy Eating</a>
+            <a href="mentalHealth.html">Mental Health</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="drugUsePreventation.html">Drug-Use Prevention</a>
+            <a href="sexEducation.html">Sex Education</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Community Support
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="donations.html">Donations</a>
+            <a href="eventsWebinars.html">Events&Webinars</a>
+            <a href="communityServices.html">Community Services</a>
+          </div>
+        </div>
+        <a href="selfDefense.html">Self-Defense</a>
+      </div>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/doc3.avif')"
+      >
+        <div class="affirms">
+          <h1 id="firm">
+            "I embrace a positive mindset and let go of negativity"
+          </h1>
+        </div>
+      </div>
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/flower4.jpg')"
+      >
+        <div class="affirms">
+          <h1 id="firm">"I deserve to feel healthy and vibrant."</h1>
+        </div>
+      </div>
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/youth4.png')"
+      >
+        <div class="affirms">
+          <h2 id="firm"></h2>
+        </div>
+      </div>
+
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/flower.avif')"
+      >
+        <div class="affirms">
+          <h2 id="firm">
+            <span style="color: rgb(238, 203, 209)">"I am open to new e</span
+            >xperiences and opportunities for growth"
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/defense1.jpg')"
+      >
+        <div class="affirms">
+          <h2 id="firm"></h2>
+        </div>
+      </div>
+      <div
+        class="mySlides fade"
+        style="background-image: url('img/nature.avif')"
+      >
+        <div class="affirms">
+          <h2 id="firm">
+            "Embrace the beauty of mindfulness and live in the present moment,
+            savoring each experience."
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="mySlides fade"
+        style="background-image: url('./img/drug1.avif')"
+      >
+        <div class="affirms">
+          <h2 id="firm">
+            <span style="color: rgb(238, 203, 209)">"I forgive my</span>self for
+            any past
+            <span style="color: rgb(238, 203, 209)"
+              >mistakes and embrace a fresh start"</span
+            >
+          </h2>
+        </div>
+      </div>
+      <div
+        class="mySlides fade"
+        style="background-image: url('img/leaf3.avif')"
+      >
+        <div class="affirms">
+          <h2 id="firm">
+            "I am worthy of love, acceptance, and optimal HEALTH!"
+          </h2>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <div class="contact">
+      <a href="#"
+        ><img src="./img/facebook1.png" alt="instagram" style="width: 36px"
+      /></a>
+      <a href="#"
+        ><img src="./img/linnkedin1.png" alt="linkedin" style="width: 36px"
+      /></a>
+      <a href="#"
+        ><img src="./img/whatsapp1.png" alt="whatsapp" style="width: 36px"
+      /></a>
+      <a href="#"
+        ><img src="./img/twitter1.png" alt="twitter" style="width: 36px"
+      /></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Rise. All rights reserved.</p>
+    </footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides fade");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

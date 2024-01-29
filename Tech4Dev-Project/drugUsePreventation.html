@@ -6,7 +6,53 @@
     <title>drugUse</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
-    <style></style>
+    <style>
+      .hero__bg {
+        min-height: 100vh;
+        background: url(../Tech4Dev-Project/img/drug-use-prevention-heroImage.jpg);
+        background-size: cover;
+      }
+
+      .overlay {
+        min-height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .hero__content {
+        padding: 1rem 3rem;
+      }
+
+      .hero__content h1 {
+        font-size: 48px;
+        color: white;
+        width: 50%;
+        font-weight: 700;
+      }
+
+      .hero__content h1 span {
+        color: #f713c5;
+      }
+
+      .hero__content p {
+        color: white;
+        width: 50%;
+        font-weight: 200;
+      }
+      .hero__btn {
+        padding: 14px 34px;
+        border: none;
+        background-color: #f713c5;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .hero__btn:hover {
+        background: transparent;
+        border: 1px solid white;
+        transition: 2s;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -46,6 +92,38 @@
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
+    <!-- hero section -->
+    <div class="hero__bg">
+      <div class="overlay">
+        <div class="hero__content">
+          <!-- hero content -->
+          <h1>Welcome to Our <span>Drug Use Prevention</span> Campaign</h1>
+          <p>
+            Empowering individuals and communities to make informed decisions
+            and prevent drug abuse. Learn about the risks, get support, and join
+            us in promoting a drug-free lifestyle.
+          </p>
+
+          <button class="hero__btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content section -->
+    <section>
+      <h2>Why Choose a Drug-Free Lifestyle?</h2>
+      <p>
+        Living a drug-free life improves physical and mental well-being,
+        strengthens relationships, and enhances overall life satisfaction.
+      </p>
+      <p>Discover the benefits of a healthy, drug-free lifestyle:</p>
+      <ul>
+        <li>Better physical health</li>
+        <li>Mental clarity and focus</li>
+        <li>Stronger relationships with family and friends</li>
+        <li>Increased productivity and success</li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>

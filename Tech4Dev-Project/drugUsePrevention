@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drugUse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <style>
+              body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+            box-sizing: border-box;
+            line-height: 1.6; /* Increased line height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        header, .main, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+      .hero__bg {
+        min-height: 100vh;
+        background: url(../Tech4Dev-Project/img/drug-use-prevention-heroImage.jpg);
+        background-size: cover;
+      }
+
+      .overlay {
+        min-height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .hero__content {
+        padding: 1rem 3rem;
+      }
+
+      .hero__content h1 {
+        font-size: 48px;
+        color: white;
+        width: 50%;
+        font-weight: 700;
+      }
+
+      .hero__content h1 span {
+        color: #f713c5;
+      }
+
+      .hero__content p {
+        color: white;
+        width: 50%;
+        font-weight: 200;
+      }
+      .hero__btn {
+        padding: 14px 34px;
+        border: none;
+        background-color: #f713c5;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .hero__btn:hover {
+        background: transparent;
+        border: 1px solid white;
+        transition: 2s;
+      }
+
+      .main__section {
+        background-color: white;
+      }
+      
+      .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main img {
+            width: 100%;
+            max-width: 600px; /* Adjusted max-width for consistency */
+            height: 400px;
+            border-radius: 8px;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .main p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+
+
+        .share, form {
+            max-width: 600px;
+            width: 100%;
+            background-color: #f713c5; /* Match the pink color theme */
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            
+        }
+
+        label, input, textarea, button {
+            margin-bottom: 8px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        input, textarea {
+            background-color: #fff; 
+        }
+
+        .but {
+            background-color: #fff;
+            color: #11030e;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f713c5;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .head {
+            color: purple;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/colourRib.jpg" alt="Logo" />
+        <h1>Rise</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Health is Wealth
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fitness.html">Fitness</a>
+            <a href="healthyEating.html">Healthy Eating</a>
+            <a href="mentalHealth.html">Mental Health</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="drugUsePreventation.html">Drug-Use Prevention</a>
+            <a href="sexEducation.html">Sex Education</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Community Support
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="donations.html">Donations</a>
+            <a href="eventsWebinars.html">Events&Webinars</a>
+            <a href="communityServices.html">Community Services</a>
+          </div>
+        </div>
+        <a href="selfDefense.html">Self-Defense</a>
+      </div>
+    </header>
+    <!-- hero section -->
+    <div class="hero__bg">
+      <div class="overlay">
+        <div class="hero__content">
+          <!-- hero content -->
+          <h1>Welcome to Our <span>Drug Use Prevention</span> Campaign</h1>
+          <p>
+            Empowering individuals and communities to make informed decisions
+            and prevent drug abuse. Learn about the risks, get support, and join
+            us in promoting a drug-free lifestyle.
+          </p>
+
+          <button class="hero__btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content section -->
+    <div class="head">
+      <h1>War Against Drug-Abuse</h1>
+    </div>
+    
+    <div class="main">
+      <div>
+        
+        <p>According to NIH (National Institute of Health) use and misuse of alcohol, nicotine, and illicit drugs, and misuse of prescription drugs cost Americans more than $700 billion a year in increased health care costs, crime, and lost productivity. Every year, illicit and prescription drug overdoses cause tens of thousands of deaths (nearly 70,000 in 2018), alcohol contributes to the death of more than 90,000 Americans, while tobacco is linked to an estimated 480,000 deaths per year. People of all ages suffer the harmful consequences of drug use and addiction.</p>
+        <h2>What is drug addiction?</h2>
+        <p>Drug addiction is a brain and behavior disorder causing the inability to control the use of substances like alcohol, marijuana, and nicotine, leading to harm. Drug addiction can begin with experimenting with recreational drug use in social settings, and for some users, this can lead to increased drug usage frequency. For some people, especially those who use opioids, drug addiction starts when they consume prescription medications or get them from someone else who has a prescription.
+
+          Each substance has a different risk of addiction and a different rate of addiction onset. Certain medications carry a greater risk and lead to addiction more quickly than others, such as opioid painkillers. You might eventually require higher dosages of the substance to feel euphoric. You might soon find that you need the medicine to feel well. You could find that it gets harder and harder to stop using drugs as your usage grows. When trying to quit using drugs, you could experience severe cravings and become physically sick. We term these signs of withdrawal.
+        </p>
+        <h2>Why is adolescence a critical time for preventing drug addiction?</h2>
+        <p>The likelihood of developing an addiction is increased by drug use at an early age. Recall that drugs alter the brain, which can result in addiction and other severe issues. Thus, limiting the use of drugs or alcohol at a young age may help to lower these risks.</p><p>Drug usage is much more likely to occur during transitional periods. An adult's likelihood of using drugs may rise after a divorce or job loss. Risky situations for an adolescent include when they move, get divorced, or switch schools.</p>
+        <p>It is typical for adolescents to take some risks as they mature. While it's a good thing to want to try new things and grow more self-reliant, this drive may also make teenagers more likely to experiment with drugs. People do not fully develop the areas of their brain that govern judgment and decision-making until they are in their early to mid-20s. As a result, teens are less able to evaluate the risks associated with drug usage and are more susceptible to peer pressure. Drug use at this age has a greater potential to impair brain function in areas crucial to motivation, memory, learning, judgment, and behavior control.</p>
+      </div>
+      <div>
+        <h2>How can we <span style="color: red; font-weight: bolder;">STOP</span> drug-abuse and addiction?</h2>
+       
+        <p>Researchers look at how medicines affect the brain and behavior. They create drug-avoidance and addiction recovery programs using the information provided here. Additional investigation facilitates the implementation of these concepts in the community.</p>
+        <p>These prevention programs work to boost protective factors and eliminate or reduce risk factors for drug use. The programs are designed for various ages and can be used in individual or group settings, such as the school and home. There are three types of programs:
+
+          Universal programs address risk and protective factors common to all children in a given setting, such as a school or community.
+          Selective programs are for groups of children and teens who have specific factors that put them at increased risk of drug use.
+          Indicated programs are designed for youth who have already started using drugs.</p>
+        <p><a href="https://tranquilityclinic.co.za/" style="color: red; font-weight: bold;">Rehabilitation centers...</a></p>
+        <div class="share">
+          <h2>Help us help the community: Share your story...</h2>
+          <p style="color: purple;">You can choose not to fill in your personal details!!!!</p>
+          <form action="">
+            <label for="">Full Name</label>
+            <input type="text">
+            <label for="">Contact Details</label>
+            <input type="number">
+            <label for="">Email</label>
+            <input type="email">
+            <label for="">Location</label>
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10" required placeholder="Your story can help reseachers and policy makers take necessary majors to bring about positve change."></textarea>
+            <button class="but">Submit</button>
+          </form>
+          <br>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Rise. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

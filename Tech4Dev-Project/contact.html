@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Add your existing navigation styles here */
+
+main {
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+
+
+
+      </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/colourRib.jpg" alt="Logo" />
+        <h1>Rise</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Health is Wealth
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fitness.html">Fitness</a>
+            <a href="healthyEating.html">Healthy Eating</a>
+            <a href="mentalHealth.html">Mental Health</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="drugUsePreventation.html">Drug-Use Prevention</a>
+            <a href="sexEducation.html">Sex Education</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Community Support
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="donations.html">Donations</a>
+            <a href="eventsWebinars.html">Events&Webinars</a>
+      
+          </div>
+        </div>
+        <a href="selfDefense.html">Self-Defense</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Rise. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

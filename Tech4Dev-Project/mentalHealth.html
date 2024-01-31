@@ -4,6 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mentalHealth</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <style>
+      .card {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+
+      
+      .jumbotron {
+          background-image: url('img/mental.jpg'); /* Replace with your image */
+          background-size: cover;
+          color: #fff;
+          text-align: center;
+          padding: 100px 0;
+          margin-bottom: 0;
+          opacity: 0.5;
+          height: 200px;
+      }
+      .card.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .mental{
+
+        background-image: url(./img/anxiety.jpg);
+      }
+      #contact{
+  background-image: url(./img/pinkback.jpg);
+  position:sticky;
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+
+
+.team-section {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px 0;
+      background-image: url(./img/team.jpg);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      width: 500px;
+    }
+
+    .team-member.active {
+      opacity: 1;
+    }
+
+    .team-member img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      color: #666;
+    }
+    @keyframes moveText {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .moving-text {
+      display: inline-block;
+      animation: moveText 2s linear infinite; /* Adjust the duration and other properties as needed */
+    }
+    </style>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
     <style></style>
@@ -40,28 +143,59 @@
           <div class="dropdown-content">
             <a href="donations.html">Donations</a>
             <a href="eventsWebinars.html">Events&Webinars</a>
-            <a href="communityServices.html">Community Services</a>
+         
           </div>
         </div>
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
-<h1 class="mental">Mental Health</h1>
+    <div class="jumbotron">
+      <h1 class="display-4" style="color: black;"></h1>
+      <!-- <p class="lead" style="color: black;">Fuel your body with nutritious food for a healthier lifestyle.</p> -->
+  </div>
 
-<section>
+<section style="font-family: 'Pacifico', cursive; color: #e91e63; background-color: #fff; border-radius: 0px 20px 60px 40px;">
     <h1>What is Mental Health</h1>
-    <p>Mental health refers to a person's emotional, psychological, and social well-being—the state of one's mind and how it functions, including emotional well-being, cognitive function, and the ability to manage stress and relate to others. It is a crucial aspect of overall health, as mental health influences how people think, feel, and act.</p>
+    <div class="overlay-text" id="text4" style="font-family: 'Pacifico', cursive; color: #e91e63;  border-radius: 0px 20px 60px 40px;">Mental health refers to a person's emotional, psychological, and social well-being—the state of one's mind and how it functions, including emotional well-being, cognitive function, and the ability to manage stress and relate to others. It is a crucial aspect of overall health, as mental health influences how people think, feel, and act.</div>
+
 </section>
 
-<section>
-  <h1>Key components of mental health include:</h1>
-  <p><strong>Emotional Well-being:</strong> This involves understanding and managing emotions, as well as being able to cope with life's challenges.</p>
-  <p><strong>Cognitive Function:</strong> Mental health includes cognitive abilities such as thinking, reasoning, learning, and problem-solving.</p>
-  <p><strong>Social Well-being:</strong> This relates to one's ability to build and maintain healthy relationships, communicate effectively, and engage in a supportive social environment.</p>
-  <p><strong>Resilience:</strong> Mental health is not just the absence of mental disorders but also the presence of resilience—the ability to bounce back from adversity and cope with life's ups and downs.</p>
+<section class="mental" style="background-color: white;">
+  <h1 style="font-family: 'Pacifico', cursive; color: #e91e63;  border-radius: 0px 20px 60px 40px;">Key components of mental health include:</h1>
+
+  <div class="row">
+
+    <div class="col-md-6 col-sm-12">
+  <div class="card">
+    <strong>Emotional Well-being:</strong>
+    <p>This involves understanding and managing emotions, as well as being able to cope with life's challenges.</p>
+  </div>
+  </div>
+  <div class="col-md-6 col-sm-12" style="margin-right: 20px;">
+  <div class="card">
+    <strong>Cognitive Function:</strong>
+    <p>Mental health includes cognitive abilities such as thinking, reasoning, learning, and problem-solving.</p>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-6 col-sm-12" style="margin-right: 20px;">
+  <div class="card">
+    <strong>Social Well-being:</strong>
+    <p>This relates to one's ability to build and maintain healthy relationships, communicate effectively, and engage in a supportive social environment.</p>
+  </div>
+</div>
+<div class="col-md-6 col-sm-12">
+  <div class="card">
+    <strong>Resilience:</strong>
+    <p>Mental health is not just the absence of mental disorders but also the presence of resilience—the ability to bounce back from adversity and cope with life's ups and downs.</p>
+  </div>
+</div>
+  
+</div>
 </section>
 
-<section>
+<!-- <section>
   <h3>Promoting mental health involves actions and practices that enhance emotional and psychological well-being. This can include:</h3>
 <div class="row">
   <div class="column">
@@ -81,10 +215,125 @@
     <p><strong>Social Support:</strong> Building and maintaining positive relationships with family, friends, and the community can provide emotional support.</p>
   </div>
 </div>
+</section> -->
+
+<section class="team-section">
+  <div class="moving-text">  <h2 style="color: white; border-radius: 0px 20px 60px 40px;">Promoting mental health involves actions and practices that enhance emotional and psychological well-being.</h2></div>
+  <div class="team-grid">
+    <!-- Team Member 1 -->
+    <div class="team-member active">
+      <img src="img/healthy-lifestyle-scaled.jpg" alt="Team Member 1">
+      <h3>Healthy Lifestyle:</h3>
+      <p>Regular exercise, a balanced diet, and sufficient sleep contribute to overall well-being.</p>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="team-member">
+      <img src="img/stress-management-techniques.webp" alt="Team Member 2">
+      <h3>Stress Management:</h3>
+      <p>Developing effective coping strategies and managing stress is crucial for mental health.</p>
+    </div>
+          <!-- Team Member 1 -->
+          <div class="team-member">
+            <img src="img/healthy-lifestyle-scaled.jpg" alt="Team Member 1">
+            <h3>Access to Mental Health Services:</h3>
+            <p>Building and maintaining positive relationships with family, friends, and the community can provide emotional support.</p>
+          </div>
+    
+         <div class="team-member">
+            <img src="img/support-family-friends.png" alt="Team Member 2">
+            <h3>Healthy Lifestyle:</h3>
+            <p>Developing effective coping strategies and managing stress is crucial for mental health.</p>
+          </div> 
+
+    <!-- Add more team members as needed -->
+
+  </div>
 </section>
-<section>
-<p>It's important to recognize that <strong>MENTAL HEALTH</strong> is a part of everyone's life, and taking care of it is essential for leading a fulfilling and productive life. Reducing stigma around mental health issues and fostering a supportive and understanding environment are crucial steps in promoting mental well-being on both an individual and societal level.</p>
+
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var teamMembers = document.querySelectorAll(".team-member");
+      var currentMemberIndex = 0;
+
+      function showMember(index) {
+        teamMembers.forEach(function(member, i) {
+          if (i === index) {
+            member.classList.add("active");
+          } else {
+            member.classList.remove("active");
+          }
+        });
+      }
+
+      function nextMember() {
+        currentMemberIndex = (currentMemberIndex + 1) % teamMembers.length;
+        showMember(currentMemberIndex);
+      }
+
+      setInterval(nextMember, 5000); // Change slide every 5 seconds
+    });
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+
+    function showCards() {
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('show');
+        }, index * 800); // Adjust the delay based on your preference
+      });
+    }
+
+    showCards();
+  });
+
+
+  
+</script>
+
+<!-- <div id="contact">
+  <div class="container mt-4">
+      <h2 class="text-center mb-4" style="color: black;">Contact Us</h2>
+      <form>
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</div> -->
+<section class="missions">
+  <div class="mission-impact-row" style="opacity: 0.5; margin-bottom: 20px;">
+    <!-- Mission Column -->
+    <div class="column">
+      <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Phone</h4>
+      <p>    +1 (123) 456-7890</p>
+      <div class="horizontal-bar"></div>
+    </div>
+
+    <!-- Impact Column -->
+    <div class="column">
+      <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Email</h4>
+      <p> info@Rise.com</p>
+      <div class="horizontal-bar"></div>
+    </div>
+    <div class="column">
+      <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Address</h4>
+      <p>23214 Budiriro 5b Harare</p>
+      <div class="horizontal-bar"></div>
+    </div>
+  </div>
 </section>
+  </div>
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>
     </footer>

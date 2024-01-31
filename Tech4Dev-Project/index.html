@@ -3,194 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fitness</title>
-           <!-- Bootstrap CSS -->
-           <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-           <!-- Custom CSS -->
-           <style>
-               body {
-                   background-color: white; /* Pink background */
-                   color: #fff; /* White text */
-               }
-       
-                        /* Add this CSS rule for the navbar */
-                        .navbar {
-                            background-color: #e91e63; /* Dark pink navbar */
-        
-                        }
-                        .mission {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 400px;
-      background-color: #f9f9f9;
-      border-radius: 0px 20px 60px 40px;
-    }
+    <title>RISE-Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: white; /* Pink background */
+        color: #fff; /* White text */
+      }
 
-    .mission-impact-row {
-      display: flex;
-      width: 80%;
-    
-      margin: auto;
-    }
-                header {
-                    padding-top: 70px;
-                    position: sticky;
-                            top: 0;
-                            z-index: 1000;
-                            
-                }
-                      
-               .jumbotron {
-                   background-color: #f06292; /* Light pink jumbotron */
-                   color: #fff; /* White text */
-                   position: relative;
-               }
-       
-               .jumbotron h1 {
-                   font-family: 'Pacifico', cursive; /* Use a nice font, change it to the desired font */
-                   font-size: 2.5rem;
-               }
-       
-               .carousel-item {
-                   position: relative;
-               }
-       
-               .motivation-text {
-                   
-                   position: absolute;
-                   top: 50%;
-                   left: 35%;
-                   transform: translate(-50%, -50%);
-                   text-align: center;
-                   font-family: 'Pacifico', cursive; /* Use the same font as in the jumbotron */
-                   font-size: 2rem;
-                   background-color: rgba(236, 64, 122, 0.6); /* Transparent card background */
-                   border-radius: 15px;
-               }
-       
-               .card {
-                   background-color: #ec407a; /* Medium pink cards */
-                   color: #fff; /* White text */
-                   transition: transform 0.3s;
-               }
-       
-               .card:hover {
-                   transform: scale(1.05);
-               }
-       
-               .card img {
-                   transition: transform 0.3s;
-               }
-       
-               .card:hover img {
-                   transform: scale(1.1);
-               }
-       
-               .donation-section {
-                   background-color: #f48fb1; /* Lighter pink donation section */
-                   color: #fff; /* White text */
-               }
-   
-               .transparent-card {
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%, -50%);
-               text-align: center;
-               background-color: rgba(236, 64, 122, 0.6); /* Transparent card background */
-               padding: 20px;
-               border-radius: 15px;
-               width: 70%;
-           }
-           .fitness-container {
-      margin-bottom: 30px;
-      
-    }
+      /* Add this CSS rule for the navbar */
+      .navbar {
+        background-color: #e91e63; /* Dark pink navbar */
+      }
+      .mission {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-color: #f9f9f9;
+        border-radius: 0px 20px 60px 40px;
+      }
 
-    .video-section {
-    position: relative;
-    height: 550px; /* Set the desired height for the video section */
-    overflow: hidden;
-}
-.motivation-text {
-                   
+      .mission-impact-row {
+        display: flex;
+        width: 80%;
 
-               }
-       
-/* Add styles for the background video */
-#background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    background-color: black;
-}
+        margin: auto;
+      }
+      header {
+        padding-top: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
 
-/* Add styles for the overlay text */
-                .overlay-text {
-                    position: absolute;
-                
-                    transform: translate(-50%, -50%);
-                    text-align: center;
-                    color: #fff; /* Adjust text color */
-                    position: absolute;
-                    top: 50%;
-                    left: 35%;
-                    text-align: center;
-                    font-family: 'Pacifico', cursive; /* Use the same font as in the jumbotron */
-                    font-size: 2rem;
-                    background-color: rgba(236, 64, 122, 0.6); /* Transparent card background */
-                    border-radius: 15px;
-                        }
-/* Add styles for the banners overlay */
-.banners-overlay {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    margin-top: -50px; /* Adjust the negative margin based on your design */
-    z-index: 2; /* Ensure banners appear above other content */
-}
+      .jumbotron {
+        background-color: #f06292; /* Light pink jumbotron */
+        color: #fff; /* White text */
+        position: relative;
+      }
 
-/* Adjust styles for each banner */
-.banner {
-    background-image: url(./img/backService.jpg);
-    width: 400px; /* Adjust banner width */
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity */
-    padding: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    margin: 0 10px; /* Adjust margin between banners */
-    height: 400px;
-}
-#contact{
-  background-image: url(./img/pinkback.jpg);
-  position:sticky;
-  opacity: 0.5;
-  margin-bottom: 50px;
-}
-.banner img {
-    width: 100%;
-    border-radius: 10px;
-}
+      .jumbotron h1 {
+        font-family: "Pacifico", cursive; /* Use a nice font, change it to the desired font */
+        font-size: 2.5rem;
+      }
 
-.banner h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
+      .carousel-item {
+        position: relative;
+      }
 
-.banner p {
-    font-size: 1rem;
-}
+      .motivation-text {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: "Pacifico", cursive; /* Use the same font as in the jumbotron */
+        font-size: 2rem;
+        background-color: rgba(
+          236,
+          64,
+          122,
+          0.6
+        ); /* Transparent card background */
+        border-radius: 15px;
+      }
 
-    
-           </style>
+      .card {
+        background-color: #ec407a; /* Medium pink cards */
+        color: #fff; /* White text */
+        transition: transform 0.3s;
+      }
 
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        transition: transform 0.3s;
+      }
+
+      .card:hover img {
+        transform: scale(1.1);
+      }
+
+      .donation-section {
+        background-color: #f48fb1; /* Lighter pink donation section */
+        color: #fff; /* White text */
+      }
+
+      .transparent-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(
+          236,
+          64,
+          122,
+          0.6
+        ); /* Transparent card background */
+        padding: 20px;
+        border-radius: 15px;
+        width: 70%;
+      }
+      .fitness-container {
+        margin-bottom: 30px;
+      }
+
+      .video-section {
+        position: relative;
+        height: 550px; /* Set the desired height for the video section */
+        overflow: hidden;
+      }
+      .motivation-text {
+      }
+
+      /* Add styles for the background video */
+      #background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        background-color: black;
+      }
+
+      /* Add styles for the overlay text */
+      .overlay-text {
+        position: absolute;
+
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff; /* Adjust text color */
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        text-align: center;
+        font-family: "Pacifico", cursive; /* Use the same font as in the jumbotron */
+        font-size: 2rem;
+        background-color: rgba(
+          236,
+          64,
+          122,
+          0.6
+        ); /* Transparent card background */
+        border-radius: 15px;
+      }
+      /* Add styles for the banners overlay */
+      .banners-overlay {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        margin-top: -50px; /* Adjust the negative margin based on your design */
+        z-index: 2; /* Ensure banners appear above other content */
+      }
+
+      /* Adjust styles for each banner */
+      .banner {
+        background-image: url(./img/backService.jpg);
+        width: 400px; /* Adjust banner width */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Adjust background color and opacity */
+        padding: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+        margin: 0 10px; /* Adjust margin between banners */
+        height: 400px;
+      }
+      #contact {
+        background-image: url(./img/pinkback.jpg);
+        position: sticky;
+        opacity: 0.5;
+        margin-bottom: 50px;
+      }
+      .banner img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .banner h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+    </style>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
@@ -228,124 +242,165 @@
           <div class="dropdown-content">
             <a href="donations.html">Donations</a>
             <a href="eventsWebinars.html">Events&Webinars</a>
-      
           </div>
         </div>
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
-<!-- Add a new section for the background video -->
-<div class="video-section">
-  <video autoplay muted loop id="background-video">
-      <source src="img/healthyvid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <div class="overlay-text">
-      <h1 class="display-4">Welcome to Healthy Wellness Hub!!</h1>
-      <p class="lead">Welcome to our Healthy Hub! Discover a holistic approach to well-being with nutritional advice, easy home exercises for fitness, mindfulness through yoga and meditation, daily affirmations for mental health, and educational blogs. Support our mission by making a positive impact through donations. Embrace a healthier, happier you, right from the comfort of your home.</p>
-      <div class="main-button-red">
-        <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+    <!-- Add a new section for the background video -->
+    <div class="video-section">
+      <video autoplay muted loop id="background-video">
+        <source src="img/healthyvid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay-text">
+        <h1 class="display-4">Welcome to Healthy Wellness Hub!!</h1>
+        <p class="lead">
+          Welcome to our Healthy Hub! Discover a holistic approach to well-being
+          with nutritional advice, easy home exercises for fitness, mindfulness
+          through yoga and meditation, daily affirmations for mental health, and
+          educational blogs. Support our mission by making a positive impact
+          through donations. Embrace a healthier, happier you, right from the
+          comfort of your home.
+        </p>
+        <div class="main-button-red">
+          <div class="scroll-to-section">
+            <a href="#contact">Join Us Now!</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Add banners with images and text overlay between upper and lower divs -->
+    <div class="banners-overlay">
+      <div class="banner banner-1">
+        <img src="img/wellbeing.jpg" alt="Banner 1 Image" />
+        <div class="banner-text">
+          <h4>Well-Being</h4>
+          <p>
+            Find joy in the ordinary moments. Well-being is about appreciating
+            the simple pleasures of life.
+          </p>
+        </div>
+      </div>
+
+      <div class="banner banner-2">
+        <img src="img/healthyeating.jpg" alt="Banner 2 Image" />
+        <div class="banner-text">
+          <h4>Healthy Eating</h4>
+          <p>
+            Choose foods that love you back.A healthy outside starts from the
+            inside. Fuel your body with goodness.
+          </p>
+        </div>
+      </div>
+
+      <div class="banner banner-3">
+        <img src="img/stayfit.jpg" alt="Banner 3 Image" />
+        <div class="banner-text">
+          <h4>Stay Fit</h4>
+          <p>
+            Your body is a reflection of your lifestyle. Treat it with the love
+            and care it deserves through exercise.
+          </p>
+        </div>
+      </div>
+
+      <div class="banner banner-4">
+        <img src="img/mental.jpg" alt="Banner 4 Image" />
+        <div class="banner-text">
+          <h4>Mental Healthy</h4>
+          <p>
+            Happiness is not the absence of problems but the ability to deal
+            with them. Focus on your mental well-being
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-<!-- Add banners with images and text overlay between upper and lower divs -->
-<div class="banners-overlay">
-  <div class="banner banner-1">
-      <img src="img/wellbeing.jpg" alt="Banner 1 Image">
-      <div class="banner-text">
-        <h4>Well-Being</h4>
-        <p>Find joy in the ordinary moments. Well-being is about appreciating the simple pleasures of life.</p>
-      </div>
-  </div>
 
-  <div class="banner banner-2">
-      <img src="img/healthyeating.jpg" alt="Banner 2 Image">
-      <div class="banner-text">
-        <h4>Healthy Eating</h4>
-        <p>Choose foods that love you back.A healthy outside starts from the inside. Fuel your body with goodness.</p>
-      </div>
-  </div>
-
-  <div class="banner banner-3">
-      <img src="img/stayfit.jpg" alt="Banner 3 Image">
-      <div class="banner-text">
-        <h4>Stay Fit </h4>
-        <p>Your body is a reflection of your lifestyle. Treat it with the love and care it deserves through exercise.</p>
-      </div>
-  </div>
-
-  <div class="banner banner-4">
-      <img src="img/mental.jpg" alt="Banner 4 Image">
-      <div class="banner-text">
-        <h4>Mental Healthy</h4>
-        <p>Happiness is not the absence of problems but the ability to deal with them. Focus on your mental well-being</p>
-      </div>
-  </div>
-</div>
-  
-  <!-- Contact Form -->
-  <div id="contact">
-    <div class="container mt-4">
+    <!-- Contact Form -->
+    <div id="contact">
+      <div class="container mt-4">
         <h2 class="text-center mb-4">Join Us</h2>
         <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
-  </div>
-  <section class="missions">
-    <div class="mission-impact-row" style="opacity: 0.5; margin-bottom: 20px;">
-      <!-- Mission Column -->
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Phone</h4>
-        <p>    +1 (123) 456-7890</p>
-        <div class="horizontal-bar"></div>
       </div>
+    </div>
+    <section class="missions">
+      <div class="mission-impact-row" style="opacity: 0.5; margin-bottom: 20px">
+        <!-- Mission Column -->
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Phone
+          </h4>
+          <p>+1 (123) 456-7890</p>
+          <div class="horizontal-bar"></div>
+        </div>
 
-      <!-- Impact Column -->
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Email</h4>
-        <p> info@Rise.com</p>
-        <div class="horizontal-bar"></div>
+        <!-- Impact Column -->
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Email
+          </h4>
+          <p>info@Rise.com</p>
+          <div class="horizontal-bar"></div>
+        </div>
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Address
+          </h4>
+          <p>23214 Budiriro 5b Harare</p>
+          <div class="horizontal-bar"></div>
+        </div>
       </div>
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Address</h4>
-        <p>23214 Budiriro 5b Harare</p>
-        <div class="horizontal-bar"></div>
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- Donation Section -->
     <!-- <div class="donation-section text-center p-4">
         <h2 class="mb-4">Support Our Healthy Hub</h2>
         <p>Your contribution helps us continue growing a healty community.</p>
         <button class="btn btn-light btn-lg mt-3">Donate Now</button>
     </div> -->
-    
+
     <!-- JavaScript and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <!-- AOS Library for Animation -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Initialize AOS library for fade-up animation
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+      // Initialize AOS library for fade-up animation
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>

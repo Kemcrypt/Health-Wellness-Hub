@@ -3,59 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fitness</title>
-           <!-- Bootstrap CSS -->
-           <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-           <!-- Custom CSS -->
-           <style>
-               body {
-                   background-color: white; /* Pink background */
-                   color: #fff; /* White text */
-               }
-       
-                        /* Add this CSS rule for the navbar */
-                        .navbar {
-                            background-color: #e91e63; /* Dark pink navbar */
-        
-                        }
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: white; /* Pink background */
+        color: #fff; /* White text */
+      }
 
-                header {
-                    padding-top: 70px;
-                    position: sticky;
-                            top: 0;
-                            z-index: 1000;
-                            
-                }
-                      
+      /* Add this CSS rule for the navbar */
+      .navbar {
+        background-color: #e91e63; /* Dark pink navbar */
+      }
 
+      header {
+        padding-top: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
 
-               .card {
-                   background-color: #ec407a; /* Medium pink cards */
-                   color: #fff; /* White text */
-                   transition: transform 0.3s;
-               }
-       
-               .card:hover {
-                   transform: scale(1.05);
-               }
-       
-               .card img {
-                   transition: transform 0.3s;
-               }
-       
-               .card:hover img {
-                   transform: scale(1.1);
-               }
-       
-               .donation-section {
-                   background-color: #f48fb1; /* Lighter pink donation section */
-                   color: #fff; /* White text */
+      .card {
+        background-color: #ec407a; /* Medium pink cards */
+        color: #fff; /* White text */
+        transition: transform 0.3s;
+      }
 
-               }
+      .card:hover {
+        transform: scale(1.05);
+      }
 
-     /* Add a new section for the background image */
-     .image-section {
-        background-image: url('./img/aboutusNew.jpg');
+      .card img {
+        transition: transform 0.3s;
+      }
+
+      .card:hover img {
+        transform: scale(1.1);
+      }
+
+      .donation-section {
+        background-color: #f48fb1; /* Lighter pink donation section */
+        color: #fff; /* White text */
+      }
+
+      /* Add a new section for the background image */
+      .image-section {
+        background-image: url("./img/aboutusNew.jpg");
         background-size: cover;
         background-position: center;
         height: 500px;
@@ -76,108 +74,107 @@
         transition: opacity 0.5s ease-in-out;
       }
 
-#contact{
-  background-image: url(./img/pinkback.jpg);
-  position:sticky;
-  opacity: 0.5;
-  margin-bottom: 50px;
-}
-.mission {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 400px;
-      background-color: #f9f9f9;
-      border-radius: 0px 20px 60px 40px;
-    }
+      #contact {
+        background-image: url(./img/pinkback.jpg);
+        position: sticky;
+        opacity: 0.5;
+        margin-bottom: 50px;
+      }
+      .mission {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-color: #f9f9f9;
+        border-radius: 0px 20px 60px 40px;
+      }
 
-    .mission-impact-row {
-      display: flex;
-      width: 80%;
-    
-      margin: auto;
-    }
-    .dot {
-      width: 10px;
-      height: 10px;
-      background-color: #ec407a; /* Pink dot color */
-      border-radius: 50%;
-      margin-right: 5px;
-    }
-    .column {
-      flex: 1;
-      padding: 10px;
-      background-color: #fff;
-      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
+      .mission-impact-row {
+        display: flex;
+        width: 80%;
 
-    .horizontal-bar {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #db34d0;
-      transform-origin: left;
-      transform: scaleX(0);
-      transition: transform 0.5s ease-in-out;
-    }
+        margin: auto;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ec407a; /* Pink dot color */
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .column {
+        flex: 1;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
 
-    .column:hover .horizontal-bar {
-      transform: scaleX(1);
-    }
+      .horizontal-bar {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #db34d0;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+      }
 
-    h2 {
-      margin-bottom: 20px;
-    }
+      .column:hover .horizontal-bar {
+        transform: scaleX(1);
+      }
 
-    .team-section {
-      background-color: #f9f9f9;
-      text-align: center;
-      padding: 50px 0;
-      background-image: url(./img/team.jpg);
-    }
+      h2 {
+        margin-bottom: 20px;
+      }
 
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+      .team-section {
+        background-color: #f9f9f9;
+        text-align: center;
+        padding: 50px 0;
+        background-image: url(./img/team.jpg);
+      }
 
-    .team-member {
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: hidden;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-    .team-member.active {
-      opacity: 1;
-    }
+      .team-member {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
 
-    .team-member img {
-      width: 100%;
-      max-width: 150px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
+      .team-member.active {
+        opacity: 1;
+      }
 
-    .team-member h3 {
-      margin-bottom: 10px;
-    }
+      .team-member img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
 
-    .team-member p {
-      color: #666;
-    }
-           </style>
+      .team-member h3 {
+        margin-bottom: 10px;
+      }
 
+      .team-member p {
+        color: #666;
+      }
+    </style>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
@@ -215,26 +212,48 @@
           <div class="dropdown-content">
             <a href="donations.html">Donations</a>
             <a href="eventsWebinars.html">Events&Webinars</a>
-        
           </div>
         </div>
         <a href="selfDefense.html">Self-Defense</a>
       </div>
     </header>
-<!-- Add a new section for the background video -->
+    <!-- Add a new section for the background video -->
     <!-- Background image section with overlay text -->
     <div class="image-section">
       <div class="row"></div>
-      <div class="row" style="margin-top: 150px;">
+      <div class="row" style="margin-top: 150px">
         <div class="col-md-4 col-sm-12">
           <div></div>
-      <div class="overlay-text" id="text1" style="font-family: 'Pacifico', cursive; color: #e91e63; font-size: 20px;"><h1>About Us</h1></div>
+          <div
+            class="overlay-text"
+            id="text1"
+            style="
+              font-family: 'Pacifico', cursive;
+              color: #e91e63;
+              font-size: 20px;
+            "
+          >
+            <h1>About Us</h1>
+          </div>
+        </div>
+        <div
+          class="overlay-text"
+          id="text4"
+          style="
+            font-family: 'Pacifico', cursive;
+            color: #e91e63;
+            background-color: #fff;
+            border-radius: 0px 20px 60px 40px;
+          "
+        >
+          Your one-stop platform for holistic well-being. Access fitness
+          classes, nutrition guidance, mental health support, and educational
+          workshops. Connect with a community that cares. Start your wellness
+          journey with us.
+        </div>
+        <!-- Add more overlay text divs as needed -->
 
-      </div>
-      <div class="overlay-text" id="text4" style="font-family: 'Pacifico', cursive; color: #e91e63; background-color: #fff; border-radius: 0px 20px 60px 40px;">Your one-stop platform for holistic well-being. Access fitness classes, nutrition guidance, mental health support, and educational workshops. Connect with a community that cares. Start your wellness journey with us.</div>
-      <!-- Add more overlay text divs as needed -->
-
-      <!-- You can add more content here if needed -->
+        <!-- You can add more content here if needed -->
       </div>
     </div>
 
@@ -242,199 +261,281 @@
       <div class="mission-impact-row">
         <!-- Mission Column -->
         <div class="column">
-          <h2 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Mission</h2>
-          <p>      Our mission is to empower individuals on their journey to holistic well-being. We strive to provide a centralized platform that offers accessible resources, expert guidance, and a supportive community to foster positive and lasting health transformations.</p>
+          <h2 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Mission
+          </h2>
+          <p>
+            Our mission is to empower individuals on their journey to holistic
+            well-being. We strive to provide a centralized platform that offers
+            accessible resources, expert guidance, and a supportive community to
+            foster positive and lasting health transformations.
+          </p>
           <div class="horizontal-bar"></div>
         </div>
-  
+
         <!-- Impact Column -->
         <div class="column">
-          <h2 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Vision</h2>
-          <p>Our vision is to create a world where every individual has the knowledge, tools, and community support to lead a balanced and fulfilling life. We envision a society where well-being is prioritized, mental health is destigmatized, and individuals are inspired to make informed choices for their overall health.</p>
+          <h2 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Vision
+          </h2>
+          <p>
+            Our vision is to create a world where every individual has the
+            knowledge, tools, and community support to lead a balanced and
+            fulfilling life. We envision a society where well-being is
+            prioritized, mental health is destigmatized, and individuals are
+            inspired to make informed choices for their overall health.
+          </p>
           <div class="horizontal-bar"></div>
         </div>
         <div class="column">
-          <h2 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Impact</h2>
-          <p>We strives to make a positive impact by promoting physical fitness, mental well-being, and healthy lifestyles. Through our services, we aim to contribute to individual transformations, fostering a ripple effect of well-being that creates a healthier and more connected society.</p>
+          <h2 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Impact
+          </h2>
+          <p>
+            We strives to make a positive impact by promoting physical fitness,
+            mental well-being, and healthy lifestyles. Through our services, we
+            aim to contribute to individual transformations, fostering a ripple
+            effect of well-being that creates a healthier and more connected
+            society.
+          </p>
           <div class="horizontal-bar"></div>
         </div>
       </div>
     </section>
-  
 
-    <div >
-      <h2 class="text-center mb-4" style="color: black; border-radius: 0px 20px 60px 40px;">Our Services</h2>
-      <div class="row" style="margin-left: 200px;">
-          <!-- Training Session Card 1 -->
-          <div class="col-md-2">
-              <div class="card" style="height: 500px;">
-               
-                  <div class="card-body">
-                      <h5 class="card-title">Health education and awareness</h5>
-                      <p class="card-text">
-                        Promotes well-being through educational materials, workshops, and expert collaborations. Online modules and community outreach engage individuals in making informed choices for a healthier lifestyle.</p>
-                     
-                      <img src="img/education.jpg" class="card-img-top" alt="Training Session 1">
-                  </div>
-              </div>
-          </div>
-          <!-- Training Session Card 2 -->
-          <div class="col-md-2">
-              <div class="card" style="height: 500px;">
-                  
-                  <div class="card-body">
-                      <h5 class="card-title">Fitness Activities</h5>
-                      <p class="card-text"> Within the wellness hub, individuals can access state-of-the-art fitness facilities and engage with certified fitness professionals who offer a variety of exercise classes and personalized training sessions. </p>
-                     
-                      <img src="img/strength-training.jpg" class="card-img-top" alt="Training Session 2" >
-                  </div>
-              </div>
-          </div>
-          <!-- Training Session Card 3 -->
-          <div class="col-md-2">
-              <div class="card" style="height: 500px;">
-                  
-                  <div class="card-body">
-                      <h5 class="card-title">Nutrition and healthy eating</h5>
-                      <p class="card-text">A dedicated nutritionist is available to provide expert guidance on cultivating healthy eating habits, creating personalized meal plans, and offering dietary recommendations.</p>
-                      
-                      <img src="img/food.jpg" class="card-img-top" alt="Training Session 3">
-                  </div>
-              </div>
-          </div>
+    <div>
+      <h2
+        class="text-center mb-4"
+        style="color: black; border-radius: 0px 20px 60px 40px"
+      >
+        Our Services
+      </h2>
+      <div class="row" style="margin-left: 200px">
+        <!-- Training Session Card 1 -->
+        <div class="col-md-2">
+          <div class="card" style="height: 500px">
+            <div class="card-body">
+              <h5 class="card-title">Health education and awareness</h5>
+              <p class="card-text">
+                Promotes well-being through educational materials, workshops,
+                and expert collaborations. Online modules and community outreach
+                engage individuals in making informed choices for a healthier
+                lifestyle.
+              </p>
 
-          <div class="col-md-2">
-            <div class="card" style="height: 500px;">
-                
-                <div class="card-body">
-                    <h5 class="card-title">Mental health support:</h5>
-                    <p class="card-text">The wellness hub recognizes the importance of mental well-being. Trained mental health professionals and counselors are accessible to provide crucial support, counseling, and therapy services. </p>
-                    
-                    <img src="img/yoga.jpg" class="card-img-top" alt="Training Session 3">
-                </div>
+              <img
+                src="img/education.jpg"
+                class="card-img-top"
+                alt="Training Session 1"
+              />
             </div>
+          </div>
+        </div>
+        <!-- Training Session Card 2 -->
+        <div class="col-md-2">
+          <div class="card" style="height: 500px">
+            <div class="card-body">
+              <h5 class="card-title">Fitness Activities</h5>
+              <p class="card-text">
+                Within the wellness hub, individuals can access state-of-the-art
+                fitness facilities and engage with certified fitness
+                professionals who offer a variety of exercise classes and
+                personalized training sessions.
+              </p>
+
+              <img
+                src="img/strength-training.jpg"
+                class="card-img-top"
+                alt="Training Session 2"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Training Session Card 3 -->
+        <div class="col-md-2">
+          <div class="card" style="height: 500px">
+            <div class="card-body">
+              <h5 class="card-title">Nutrition and healthy eating</h5>
+              <p class="card-text">
+                A dedicated nutritionist is available to provide expert guidance
+                on cultivating healthy eating habits, creating personalized meal
+                plans, and offering dietary recommendations.
+              </p>
+
+              <img
+                src="img/food.jpg"
+                class="card-img-top"
+                alt="Training Session 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card" style="height: 500px">
+            <div class="card-body">
+              <h5 class="card-title">Mental health support:</h5>
+              <p class="card-text">
+                The wellness hub recognizes the importance of mental well-being.
+                Trained mental health professionals and counselors are
+                accessible to provide crucial support, counseling, and therapy
+                services.
+              </p>
+
+              <img
+                src="img/yoga.jpg"
+                class="card-img-top"
+                alt="Training Session 3"
+              />
+            </div>
+          </div>
         </div>
         <div class="col-md-2">
-          <div class="card" style="height: 500px;">
-              
-              <div class="card-body">
-                  <h5 class="card-title">Community engagement and support</h5>
-                  <p class="card-text">Fostering a sense of community, the wellness hub provides a space where like-minded individuals can connect, share experiences, and offer mutual encouragement and support. </p>
-                  
-                  <img src="img/community.jpg" class="card-img-top" alt="Training Session 3">
-              </div>
+          <div class="card" style="height: 500px">
+            <div class="card-body">
+              <h5 class="card-title">Community engagement and support</h5>
+              <p class="card-text">
+                Fostering a sense of community, the wellness hub provides a
+                space where like-minded individuals can connect, share
+                experiences, and offer mutual encouragement and support.
+              </p>
+
+              <img
+                src="img/community.jpg"
+                class="card-img-top"
+                alt="Training Session 3"
+              />
+            </div>
           </div>
+        </div>
       </div>
-      </div>
-  </div>
-
-
-  <section class="team-section">
-    <h2 style="color: white; border-radius: 0px 20px 60px 40px;">Our Team</h2>
-    <div class="team-grid">
-      <!-- Team Member 1 -->
-      <div class="team-member active">
-        <img src="img/profile2.jpeg" alt="Team Member 1">
-        <h3>Christabel</h3>
-        <p>Guidance and Counceling</p>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="team-member">
-        <img src="img/profile.jpg" alt="Team Member 2">
-        <h3>Olivia</h3>
-        <p>Nutrition Specialist</p>
-      </div>
-            <!-- Team Member 1 -->
-            <div class="team-member">
-              <img src="img/profile2.jpg" alt="Team Member 1">
-              <h3>Jony</h3>
-              <p>Mental Healthy Specialist</p>
-            </div>
-      
-            <!-- Team Member 2 -->
-            <div class="team-member">
-              <img src="img/profile3.jpg" alt="Team Member 2">
-              <h3>Geraldine</h3>
-              <p>Fitness Trainer</p>
-            </div>
-
-            <div class="team-member">
-              <img src="img/profile4.jpg" alt="Team Member 2">
-              <h3>Jane</h3>
-              <p>Doctor</p>
-            </div>
-      <!-- Add more team members as needed -->
-
     </div>
-  </section>
 
-  <!-- Contact Form -->
-  <div id="contact">
-    <div class="container mt-4">
-        <h2 class="text-center mb-4" style="color: black;">Contact Us</h2>
+    <section class="team-section">
+      <h2 style="color: white; border-radius: 0px 20px 60px 40px">Our Team</h2>
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member active">
+          <img src="img/profile2.jpeg" alt="Team Member 1" />
+          <h3>Christabel</h3>
+          <p>Guidance and Counceling</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="img/profile.jpg" alt="Team Member 2" />
+          <h3>Olivia</h3>
+          <p>Nutrition Specialist</p>
+        </div>
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img src="img/profile2.jpg" alt="Team Member 1" />
+          <h3>Jony</h3>
+          <p>Mental Healthy Specialist</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="img/profile3.jpg" alt="Team Member 2" />
+          <h3>Geraldine</h3>
+          <p>Fitness Trainer</p>
+        </div>
+
+        <div class="team-member">
+          <img src="img/profile4.jpg" alt="Team Member 2" />
+          <h3>Jane</h3>
+          <p>Doctor</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div id="contact">
+      <div class="container mt-4">
+        <h2 class="text-center mb-4" style="color: black">Contact Us</h2>
         <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
-  </div>
-
-  <section class="missions">
-    <div class="mission-impact-row" style="opacity: 0.5;">
-      <!-- Mission Column -->
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Phone</h4>
-        <p>    +1 (123) 456-7890</p>
-        <div class="horizontal-bar"></div>
-      </div>
-
-      <!-- Impact Column -->
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Email</h4>
-        <p> info@Rise.com</p>
-        <div class="horizontal-bar"></div>
-      </div>
-      <div class="column">
-        <h4 style="font-family: 'Pacifico', cursive;"> <span class="dot"></span>Address</h4>
-        <p>23214 Budiriro 5b Harare</p>
-        <div class="horizontal-bar"></div>
       </div>
     </div>
-  </section>
+
+    <section class="missions">
+      <div class="mission-impact-row" style="opacity: 0.5">
+        <!-- Mission Column -->
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Phone
+          </h4>
+          <p>+1 (123) 456-7890</p>
+          <div class="horizontal-bar"></div>
+        </div>
+
+        <!-- Impact Column -->
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Email
+          </h4>
+          <p>info@Rise.com</p>
+          <div class="horizontal-bar"></div>
+        </div>
+        <div class="column">
+          <h4 style="font-family: 'Pacifico', cursive">
+            <span class="dot"></span>Address
+          </h4>
+          <p>23214 Budiriro 5b Harare</p>
+          <div class="horizontal-bar"></div>
+        </div>
+      </div>
+    </section>
     <!-- Donation Section -->
     <!-- <div class="donation-section text-center p-4">
         <h2 class="mb-4">Support Our Healthy Hub</h2>
         <p>Your contribution helps us continue growing a healty community.</p>
         <button class="btn btn-light btn-lg mt-3">Donate Now</button>
     </div> -->
-    
+
     <!-- JavaScript and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <!-- AOS Library for Animation -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Initialize AOS library for fade-up animation
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+      // Initialize AOS library for fade-up animation
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
 
-      
       // Wait for the page to load
       document.addEventListener("DOMContentLoaded", function () {
         // Delay the display of overlay text
@@ -452,27 +553,27 @@
           document.getElementById("text4").style.opacity = 1;
         }, 2000);
       });
-      document.addEventListener("DOMContentLoaded", function() {
-      var teamMembers = document.querySelectorAll(".team-member");
-      var currentMemberIndex = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        var teamMembers = document.querySelectorAll(".team-member");
+        var currentMemberIndex = 0;
 
-      function showMember(index) {
-        teamMembers.forEach(function(member, i) {
-          if (i === index) {
-            member.classList.add("active");
-          } else {
-            member.classList.remove("active");
-          }
-        });
-      }
+        function showMember(index) {
+          teamMembers.forEach(function (member, i) {
+            if (i === index) {
+              member.classList.add("active");
+            } else {
+              member.classList.remove("active");
+            }
+          });
+        }
 
-      function nextMember() {
-        currentMemberIndex = (currentMemberIndex + 1) % teamMembers.length;
-        showMember(currentMemberIndex);
-      }
+        function nextMember() {
+          currentMemberIndex = (currentMemberIndex + 1) % teamMembers.length;
+          showMember(currentMemberIndex);
+        }
 
-      setInterval(nextMember, 5000); // Change slide every 5 seconds
-    });
+        setInterval(nextMember, 5000); // Change slide every 5 seconds
+      });
     </script>
     <footer>
       <p>&copy; 2024 Rise. All rights reserved.</p>
